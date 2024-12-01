@@ -88,5 +88,7 @@ For questions or collaboration, feel free to reach out:
   
   Linkedln: https://www.linkedin.com/in/denis-kirimi/
 
+  Pitch deck: https://helpinghive-ywc4x6w.gamma.site/
+
 
 
