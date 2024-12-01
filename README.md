@@ -1,4 +1,4 @@
-# Community Volunteer Matching Platform (CVM Platform)
+# Community Volunteer Matching Platform (HelpingHive)
 
 Project Description
 
