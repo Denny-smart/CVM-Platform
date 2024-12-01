@@ -4,6 +4,10 @@ Project Description
 
 The Community Volunteer Matching Platform (HelpingHive) is a beginner-friendly web application designed to connect community volunteers with organizations that need their skills. This platform simplifies finding and managing volunteering opportunities, helping foster community development.
 
+Pitch Deck:
+
+ https://helpinghive-ywc4x6w.gamma.site/
+
 Features
 
 For Volunteers:
@@ -14,7 +18,6 @@ For Volunteers:
    
    Match Suggestions: Receive suggested opportunities based on skills and location.
 
-   
 For Organizations:
 
    Register and Post Opportunities: Add volunteer opportunities with details like required skills and availability.
@@ -84,11 +87,7 @@ For questions or collaboration, feel free to reach out:
 
   Email: ownerkirimi@gmail.com
   
-  Github: https://github.com/Denny-smart
-  
   Linkedln: https://www.linkedin.com/in/denis-kirimi/
-
-  Pitch deck: https://helpinghive-ywc4x6w.gamma.site/
 
 
 
