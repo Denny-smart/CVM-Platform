@@ -1,0 +1,25 @@
+{
+    "name": "cvm-platform",
+    "version": "1.0.0",
+    "description": "Overview: The Community Volunteer Matching Platform (HelpingHive) is a beginner-friendly web application designed to connect community volunteers with organizations that need their skills. This platform simplifies finding and managing volunteering opportunities, helping foster community development.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node app",
+      "dev": "nodemon app"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "dotenv": "^16.4.5",
+      "ejs": "^3.1.10",
+      "express": "^4.21.0",
+      "jsonwebtoken": "^9.0.2",
+      "mysql2": "^3.11.3",
+      "validator": "^13.12.0"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.7"
+    }
+  }
