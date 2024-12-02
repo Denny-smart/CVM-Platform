@@ -6,7 +6,7 @@ The Community Volunteer Matching Platform (HelpingHive) is a beginner-friendly w
 
 Pitch Deck:
 
-    https://helpinghive-ywc4x6w.gamma.site/
+https://helpinghive-ywc4x6w.gamma.site/
 
 Features
 
