@@ -85,9 +85,9 @@ Contact
 
 For questions or collaboration, feel free to reach out:
 
-    Email: ownerkirimi@gmail.com
+Email: ownerkirimi@gmail.com
   
-    Linkedln: https://www.linkedin.com/in/denis-kirimi/
+Linkedln: https://www.linkedin.com/in/denis-kirimi/
 
 
 
