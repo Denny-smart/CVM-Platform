@@ -22,6 +22,14 @@ app.get('/', (req, res) => {
     res.render('index', {title: 'Home'});
 });
 
+app.get('/organizations', (req, res) => {
+    res.render('org', {title: 'ForOrganizations'});
+});
+
+app.get('/volunteers', (req, res) => {
+    res.render('vol', {title: 'ForVolunteers'});
+});
+
 app.get('/form', (req, res) => {
     res.render('register', {title: 'Signup'});
 });
