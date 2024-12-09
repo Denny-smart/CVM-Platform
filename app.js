@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 require('dotenv').config();
+const serverless = require('serverless-http');
 
 const authRoutes = require('./routes/auth');
 
@@ -48,6 +49,13 @@ app.get('/contact', (req, res) => {
 app.use((req, res) => {
     res.status(404).render('404', {title: '404'});
 });
+
+app.get('/', (req, res) => {
+    res.json({ message: 'Successfully deployed on Netlify!' });
+  });
+
+// For Netlify serverless functions
+module.exports.handler = serverless(app);
 
 
 const PORT = process.env.PORT;
