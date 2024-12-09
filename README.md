@@ -5,7 +5,7 @@ Project Description
 The Community Volunteer Matching Platform (HelpingHive) is a beginner-friendly web application designed to connect community volunteers with organizations that need their skills. This platform simplifies finding and managing volunteering opportunities, helping foster community development.
 
 Note:
-(This page is still underdevelopment some feature might not be available at the moment.)
+(This page is still under development some feature might not be available at the moment.)
 
 Pitch Deck:
 
