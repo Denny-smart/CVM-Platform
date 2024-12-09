@@ -11,8 +11,10 @@ const app = express();
 app.set('view engine','ejs');
 app.set('views','public');
 
-// //set-up middleware
-app.use(express.static('views'));
+// set-up middleware
+app.use(express.static('views')); // Serves static files from the 'views' directory
+// app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css'))); // Serves Bootstrap CSS
+// app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js'))); // Serves Bootstrap JS
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

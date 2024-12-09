@@ -33,16 +33,36 @@
     border-radius: 5px;
 }
 
-/* Base Styles */
+/* Base Styles with Improved Grid Layout */
 body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.6;
     background: linear-gradient(135deg, #f0f2f5 0%, #e6e9ed 100%);
     color: var(--text-primary);
-    padding: 40px;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: Create a main content grid container */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 
 /* Header and Navigation */
@@ -58,9 +78,17 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li a {
@@ -74,6 +102,8 @@ nav ul li a {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-align: center;
+    width: 100%;
 }
 
 nav ul li a:hover {
@@ -82,6 +112,13 @@ nav ul li a:hover {
     -webkit-background-clip: text;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(255, 107, 107, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Main Content */
@@ -244,12 +281,39 @@ button[type="submit"]:active {
 
 /* Footer */
 footer {
-    margin-top: auto;
+    width: 100%;
     padding: 30px 0;
-    text-align: center;
     color: var(--text-secondary);
     font-size: 0.9rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+    /* Centering the footer content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Footer content wrapper */
+.footer-content {
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+/* Ensure the body layout supports a sticky footer */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Optional: Main content container */
+.main-container {
+    padding-bottom: 100px; /* Adjust based on footer height to prevent content overlap */
 }
 
 /* Responsive Design */
