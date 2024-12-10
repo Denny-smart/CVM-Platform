@@ -3,12 +3,10 @@
     "version": "1.0.0",
     "description": "Overview: The Community Volunteer Matching Platform (HelpingHive) is a beginner-friendly web application designed to connect community volunteers with organizations that need their skills. This platform simplifies finding and managing volunteering opportunities, helping foster community development.",
     "main": "index.js",
-    "scripts": {
-        "start": "node server.js",
-        "build": "netlify-lambda build express",
-        "serve": "netlify-lambda serve express",
-        "dev": "nodemon server.js"
-    },
+   "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -24,7 +22,6 @@
         "validator": "^13.12.0"
     },
     "devDependencies": {
-        "netlify-lambda": "^2.0.16",
         "nodemon": "^3.1.7"
     }
 }
