@@ -2,12 +2,12 @@
 
 /* Reset and Custom Properties */
 :root {
-    --primary: #ff6b6b;
-    --secondary: #ffa500;
-    --accent: #1dd1a1;
-    --text-primary: #2d3436;
-    --text-secondary: #636e72;
-    --background: #f0f2f5;
+    --primary: #348bc9;
+    --secondary: #317607;
+    --accent: #d888d8;
+    --text-primary: #040a39;
+    --text-secondary: #6109f8;
+    --background: #ffffff;
     --white: #ffffff;
 }
 
