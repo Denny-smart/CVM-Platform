@@ -32,8 +32,8 @@ app.get('/volunteers', (req, res) => {
     res.render('vol', {title: 'ForVolunteers'});
 });
 
-app.get('/form', (req, res) => {
-    res.render('register', {title: 'Signup'});
+app.get('/register', (req, res) => {
+    res.render('register', {title: 'CreateAccount'});
 });
 
 app.get('/login', (req, res) => {

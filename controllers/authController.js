@@ -4,11 +4,17 @@ const validator = require('validator');
 const jwt = require('jsonwebtoken');
 
 exports.registerUser = async (request, response) => {
-    const { name, email, password } = request.body;
+    const { email, 
+        password, 
+        first_name, 
+        last_name, 
+        user_type,
+        location,
+        contact_number  } = request.body;
     
     try {
         // Input validation
-        if (!name || !email || !password) {
+        if (!email || !password) {
             return response.status(400).json({ message: 'All fields are required' });
         }
         
@@ -32,8 +38,8 @@ exports.registerUser = async (request, response) => {
 
         // Insert record into db table
         const [result] = await db.execute(
-            'INSERT INTO users (name, email, password, created_at) VALUES (?, ?, ?, NOW())',
-            [name, email, hashedPassword]
+            'INSERT INTO users (email, password, created_at) VALUES (?, ?, ?, NOW())',
+            [email, hashedPassword]
         );
 
         // Generate JWT token
@@ -69,7 +75,7 @@ exports.loginUser = async (request, response) => {
 
         // Check if user exists
         const [users] = await db.execute(
-            'SELECT id, name, email, password, login_attempts, last_login_attempt FROM users WHERE email = ?',
+            'SELECT id, email, password, login_attempts, last_login_attempt FROM users WHERE email = ?',
             [email]
         );
 
@@ -116,7 +122,6 @@ exports.loginUser = async (request, response) => {
         response.status(200).json({
             message: 'Login successful!',
             user: {
-                name: user.name,
                 email: user.email
             },
             token
